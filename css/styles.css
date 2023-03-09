@@ -8944,12 +8944,21 @@ fieldset:disabled .btn {
     border: 2px solid #bd5d38;
   }
 
-  .input input{
-    width: 350px !important;
+  .kontak input[type="text"]{
+    max-width: 100% !important;
   }
+  
+  .form-control[type="file"] {
+    max-width: 100% !important;
+  }
+
+  button#submit{
+    margin: auto !important;
+  }
+
 }
 
-@media (max-width: 900px) {
+@media (min-width:467px) and (max-width: 900px) {
 
   #titik-balik img{
     width: 125px !important;
@@ -8972,14 +8981,22 @@ fieldset:disabled .btn {
     border: 3px solid #bd5d38;
   }
 
-  .input input{
-    width: 625px !important;
-    text-align: center;
-    margin-left: -10rem;
+  .keluarga img{
+    max-width: 100% !important;
+  }
+
+  .kontak input[type="text"]{
+    max-width: 100% !important;
   }
   
-   button#submit{
-    margin-left: 7rem;
+  .form-control[type="file"] {
+    max-width: 100% !important;
+  }
+
+  button#submit{
+    display: block;
+    text-align: center;
+    margin: auto !important;
   }
 }
 
